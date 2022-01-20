@@ -15,10 +15,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-//    public void buttonCLicked(View v)
-//    {
-//        EditText weightView = (EditText) findViewById(R.id.weightBox);
-//        String wS = weightView.getText().toString();
-//    }
+    public void buttonClicked(View v)
+    {
+        EditText weightView = (EditText) findViewById(R.id.weightBox);
+        String wS = weightView.getText().toString();
+        EditText heightView = (EditText) findViewById(R.id.heightBox);
+        String hS = heightView.getText().toString();
+
+        double wD = BMIModel.toDouble(wS);
+        double hD = BMIModel.toDouble(hS);
+        double bmiD = BMIModel.getBMI(wD, hD);
+        String bmiS = BMIModel.formatBMI(bmiD);
+        ((TextView) findViewById(R.id.answer)).setText(bmiS);
+    }
 }
 
