@@ -2,8 +2,10 @@
     <string name="app_name">BMI</string>
     <string name="weightLabel">Your Weight</string>
     <string name="weightBox" />
+    <string name="whint">(In Kilograms)</string>
     <string name="heightLabel">Your Height</string>
     <string name="heightBox" />
+    <string name="hhint">(In Meters)</string>
     <string name="button">COMPUTE BMI</string>
     <string name="answer" />
 </resources>
